@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+:root{
+    --mainBg: rgb(133, 249, 255);
+    --gridBg: rgb(211, 156, 228);
+    --gridSecondaryBg: rgba(255, 192, 243, 0.402);
+    --box-shadow: 8px 6px 10px -6px rgba(0,0,0,0.75);
+}
+
+#start-button{
+    border: none;
+    background-color: var(--gridBg);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+#start-button i{
+    color: black;
+    font-size: 25px;
+}
+
+
+.wrapper{
+    display: grid;
+    grid-template-areas: "title"
+                         "container";
+    justify-content: center;
+}
+
+.right{
+    display: grid;
+    padding: 0 20px;
+    
+}
+
+.wrapper h3{
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+    margin: 10px;
+}
+
+.title{
+    text-align: center;
+    font-family: 'Monoton', cursive;
+    font-size: 90px;
+    font-weight: 100;
+}
+html{
+    background-color: var(--mainBg);
+}
+
+.container {
+    display: flex;
+}
+
+#score{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+}
+
+.grid{
+    width: 218px;
+    height: 438px;
+    background-color: var(--gridBg);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    padding: 2px;
+    box-shadow: var(--box-shadow);
+}
+
+.grid div {
+    height: 20px;
+    width: 20px;
+    background-color: var(--gridSecondaryBg);
+}
+
+.right a{
+    width: 100%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.boundary {
+    background-color: transparent !important;
+}
+
+
+.mini-grid {
+    width: 86px;
+    height: 86px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--gridBg);
+    gap: 2px;
+    padding: 2px;
+    box-shadow: var(--box-shadow);
+
+}
+
+.mini-grid div {
+    height: 20px;
+    width: 20px;
+    background-color: var(--gridSecondaryBg);
+}
+
+.controller{
+    display: grid;
+    grid-template-areas: 
+        "... rotate ..."
+        "move-left ... move-right"
+        "... move-down ...";
+    align-content: space-around;
+    font-size: 15px;
+    height: 120px;
+    width: 120px;
+    gap: 5px;
+    padding-top: 20px;
+}
+
+.controller i{
+    font-weight: 900;
+}
+
+.controller button{
+    text-align: center;
+    justify-content: center;
+    background-color: var(--gridBg);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+    border: none;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+
+.rotateBlock{
+    grid-area: rotate;
+}
+
+
+
+.shiftLeft{
+    grid-area: move-left;
+}
+.shiftRight{
+    grid-area: move-right;
+}
+.shiftDown{
+    grid-area: move-down;
+}
+
