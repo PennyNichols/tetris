@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 
 :root{
-    --mainBg: rgb(133, 249, 255);
+    --mainBg: rgb(186, 133, 255);
     --gridBg: rgb(211, 156, 228);
     --gridSecondaryBg: rgba(255, 192, 243, 0.402);
     --box-shadow: 8px 6px 10px -6px rgba(0,0,0,0.75);
